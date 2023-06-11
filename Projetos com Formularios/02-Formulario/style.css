@@ -4,4 +4,149 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    max-width: 550px;
+    margin: 1.2rem 1.2rem;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.521);
+}
+
+.form-header {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.form-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.form-header p {
+    font-size: 1.5rem;
+}
+
+.input {
+    text-align: left;
+}
+
+.input input {
+    width: 100%;
+    height: 54px;
+    margin: 12px 0px 24px 0px;
+    padding: 24px 0px 24px 60px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    background-color: rgba(211, 211, 211, 0.438);
+}
+
+input[type='email'] {
+
+    background-image: url('imagens/mail_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 40px;
+}
+
+input[type='password'] {
+
+    background-image: url('imagens/key_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 40px;
+}
+
+div.check {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 48px 0px;
+    font-size: 1rem;
+}
+
+.lembrar {
+    
+    display: flex;
+    gap: 10px;
+}
+
+p a {
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+div.submit {
+
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+div.submit input {
+
+    width: 50%;
+    height: 54px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+input[type='button'] {
+
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+input[type='button']:hover {
+
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+input[type='submit'] {
+
+    color: white;
+    background-color: blue;
+    border: none;
+}
+
+input[type='submit']:hover {
+
+    background-color: darkblue;
+}
+
+img {
+    width: 15%;
+    display: inline-block;
+    margin: 50px 12px 0px 12px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(77, 75, 75, 0.589);
+    background-color: white;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.separador {
+    font-size: 1.3rem;
 }

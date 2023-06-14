@@ -1,0 +1,155 @@
+/* CONFIGURAÇÕES GLOBAIS */
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%; 
+    
+    /* 62.5% = 10px = 1rem*/
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+}
+
+.navbar-list {
+    list-style-type: none;
+}
+
+/* ---------------------------- */
+
+/* ESTILO DO NAVBAR  */
+
+.navbar {
+    width: 100%;
+    height: 11rem;
+    padding: 1.6rem calc((100% - 117rem) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.459);
+}
+
+.navbar-header_logo {
+    font-size: 3.5rem;
+    color: brown;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list_link {
+    color: black;
+    display: block;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.navbar-list_link:hover {
+    color: brown;
+    transform: scale(1.1);
+}
+
+.navbar-cta_link {
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: brown;
+    transition: 0.5s;
+}
+
+.navbar-cta_link:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1175px) {
+    .navbar {
+        padding: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .navbar-list_link {
+        text-decoration: underline;
+    }
+
+    .navbar-cta {
+        display: none;
+    }
+}
+
+/* ************************************* */
+
+/* ESTILO DO HERO SECTION */
+
+.hero {
+    min-height: calc(100vh - 11rem);
+    padding: 1.6rem calc((100% - 117rem) / 2);
+    background:rgba(128, 128, 128, 0.459) url('imagens/hero.png');
+    background-size: cover;
+    background-position: center left;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    min-width: 37rem;
+}
+
+.hero-text_titulo {
+    color: white;
+    font-size: 4.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero-text_descricao {
+    color: white;
+    max-width: 54rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.hero-text_cta {
+    width: 27rem;
+    display: block;
+    padding: 1.6rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 1175px) {
+    .hero {
+        padding: 1.6rem;
+    }
+}

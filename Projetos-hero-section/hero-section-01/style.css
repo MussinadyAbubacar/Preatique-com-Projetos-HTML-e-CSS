@@ -37,7 +37,6 @@ p {
     justify-content: space-between;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.459);
-    position: fixed;
 }
 
 .navbar-header_logo {
@@ -108,19 +107,19 @@ p {
 /* ESTILO DO HERO SECTION */
 
 .hero {
-    height: 100vh;
+    width: 100%;
+    height: calc(100vh - 11rem);
     padding: 1.6rem calc((100% - 117rem) / 2);
     background:rgba(128, 128, 128, 0.459) url('imagens/hero.png');
     background-size: cover;
     background-position: center left;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    position: relative;
 }
 
 .hero-text {
-    padding-top: 15rem;
-    min-width: 37rem;
+    max-width: 37rem;
 }
 
 .hero-text_titulo {
@@ -132,7 +131,7 @@ p {
 
 .hero-text_descricao {
     color: white;
-    max-width: 54rem;
+    max-width: 37rem;
     font-size: 1.6rem;
     font-weight: 600;
     margin: 1rem 0;
@@ -153,6 +152,6 @@ p {
 
 @media screen and (max-width: 1175px) {
     .hero {
-        padding: 1.6rem;
+        padding: 2rem;
     }
 }

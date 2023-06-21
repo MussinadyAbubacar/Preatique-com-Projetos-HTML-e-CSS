@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+/* ESTILO DO NOSSO CONTEINER */
+
+.conteiner {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px red;
+    border: 2px solid red;
+}
+
+/* --------------------------- */
+
+
+
+/* ESTILO DO NOSSO SLIDE BOX */
+
+.slide-box {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+
+
+/* ESTILO DA NOSSA DIV DA IMAGEM 'SLIDE-IMG' */
+
+.slide-img {
+    position: relative;
+    width: 25%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+/* ESTILO DAS NOSSAS DIVS DOS BOTOES e OS BOTOES */
+
+.nav-auto, .nav-manual {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    margin-top: 350px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.bt-manual, .nav-auto div {
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bt-manual:hover {
+    background-color: red;
+}
+
+#radio1:checked ~ .nav-auto .bt-auto1, #radio2:checked ~ .nav-auto .bt-auto2, #radio3:checked ~ .nav-auto .bt-auto3 {
+    background-color: red;
+}
